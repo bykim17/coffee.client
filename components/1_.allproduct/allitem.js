@@ -3,96 +3,241 @@ import { Card, Button } from "react-bootstrap";
 const allitem = () => {
   return (
     <div style={{ width: "100%" }}>
-      <div style={{ width: "fit-content", position: "absolute",right: "70px",}}>
-        <div style={{ backgroundColor: "#EFEFEF",marginTop:"30px", }}>
-        <div style={{ fontFamily: "Kanit, sans-serif",backgroundColor:  "#E37545",color: "#FFFFFF",fontSize:"30px" }}>สินค้ายอดนิยม  !!</div>
-          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gridColumnGap:"30px",gridRowGap:"30px",padding:"30px"}}>
+      <div
+        style={{ width: "fit-content", position: "absolute", right: "70px" }}
+      >
+        <div
+          style={{
+            backgroundColor: "#EFEFEF",
+            marginTop: "30px",
+            marginBottom: "30px",
+          }}
+        >
+          <div
+            style={{
+              fontFamily: "Kanit, sans-serif",
+              backgroundColor: "#E37545",
+              color: "#FFFFFF",
+              fontSize: "30px",
+              paddingLeft: "15px",
+            }}
+          >
+            {" "}
+            สินค้ายอดนิยม !!
+          </div>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr 1fr 1fr",
+              gridColumnGap: "30px",
+              gridRowGap: "30px",
+              padding: "30px",
+            }}
+          >
             <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" style={{width:'287px',height:'180px'}} src="https://images4.sw-cdn.net/product/picture/710x528_21148842_11986442_1511049134.jpg" />
+              <Card.Img
+                variant="top"
+                style={{ width: "287px", height: "180px" }}
+                src="https://images4.sw-cdn.net/product/picture/710x528_21148842_11986442_1511049134.jpg"
+              />
               <Card.Body>
-                <Card.Title>Invoker  Figure</Card.Title>
-                <Card.Text>
-                  Go to Hell. na kub ^_^
+                <Card.Title
+                  style={{
+                    textAlign: "center",
+                  }}
+                >
+                  กาแฟ ออร์แกนิค เอสเพรสโซ่ (ชนิดบด)
+                </Card.Title>
+                <Card.Text
+                  style={{
+                    textAlign: "center",
+                    color: "#5676AE",
+                    fontSize: "20px",
+                  }}
+                >
+                  ฿300.00 – ฿1,300.00
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
             <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" style={{width:'287px',height:'180px'}} src="https://images4.sw-cdn.net/product/picture/710x528_21148842_11986442_1511049134.jpg" />
+              <Card.Img
+                variant="top"
+                style={{ width: "287px", height: "180px" }}
+                src="https://images4.sw-cdn.net/product/picture/710x528_21148842_11986442_1511049134.jpg"
+              />
               <Card.Body>
-                <Card.Title>Invoker  Figure</Card.Title>
-                <Card.Text>
-                  Go to Hell. na kub ^_^
+                <Card.Title
+                  style={{
+                    textAlign: "center",
+                  }}
+                >
+                  กาแฟเครซ คาเฟ่ บาร์เรล เอจ (ชนิดเม็ด)
+                </Card.Title>
+                <Card.Text
+                  style={{
+                    textAlign: "center",
+                    color: "#5676AE",
+                    fontSize: "20px",
+                  }}
+                >
+                  ฿450.00 – ฿2,140.00
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
             <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" style={{width:'287px',height:'180px'}} src="https://images4.sw-cdn.net/product/picture/710x528_21148842_11986442_1511049134.jpg" />
+              <Card.Img
+                variant="top"
+                style={{ width: "287px", height: "180px" }}
+                src="https://images4.sw-cdn.net/product/picture/710x528_21148842_11986442_1511049134.jpg"
+              />
               <Card.Body>
-                <Card.Title>Invoker  Figure</Card.Title>
-                <Card.Text>
-                  Go to Hell. na kub ^_^
+                <Card.Title
+                  style={{
+                    textAlign: "center",
+                  }}
+                >
+                  เอสเพรสโซ่ ซอฟท์พ็อดส์
+                </Card.Title>
+                <Card.Text
+                  style={{
+                    textAlign: "center",
+                    color: "#5676AE",
+                    fontSize: "20px",
+                  }}
+                >
+                  ฿243.00 – ฿2,639.00
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>                                         
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" style={{width:'287px',height:'180px'}} src="https://images4.sw-cdn.net/product/picture/710x528_21148842_11986442_1511049134.jpg" />
-              <Card.Body>
-                <Card.Title>Invoker  Figure</Card.Title>
-                <Card.Text>
-                  Go to Hell. na kub ^_^
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" style={{width:'287px',height:'180px'}} src="https://images4.sw-cdn.net/product/picture/710x528_21148842_11986442_1511049134.jpg" />
-              <Card.Body>
-                <Card.Title>Invoker  Figure</Card.Title>
-                <Card.Text>
-                  Go to Hell. na kub ^_^
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
             <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" style={{width:'287px',height:'180px'}} src="https://images4.sw-cdn.net/product/picture/710x528_21148842_11986442_1511049134.jpg" />
+              <Card.Img
+                variant="top"
+                style={{ width: "287px", height: "180px" }}
+                src="https://images4.sw-cdn.net/product/picture/710x528_21148842_11986442_1511049134.jpg"
+              />
               <Card.Body>
-                <Card.Title>Invoker  Figure</Card.Title>
-                <Card.Text>
-                  Go to Hell. na kub ^_^
+                <Card.Title
+                  style={{
+                    textAlign: "center",
+                  }}
+                >
+                  กาแฟ ออร์แกนิค เอสเพรสโซ่ (ชนิดบด)
+                </Card.Title>
+                <Card.Text
+                  style={{
+                    textAlign: "center",
+                    color: "#5676AE",
+                    fontSize: "20px",
+                  }}
+                >
+                  ฿300.00 – ฿1,300.00
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
             <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" style={{width:'287px',height:'180px'}} src="https://images4.sw-cdn.net/product/picture/710x528_21148842_11986442_1511049134.jpg" />
+              <Card.Img
+                variant="top"
+                style={{ width: "287px", height: "180px" }}
+                src="https://images4.sw-cdn.net/product/picture/710x528_21148842_11986442_1511049134.jpg"
+              />
               <Card.Body>
-                <Card.Title>Invoker  Figure</Card.Title>
-                <Card.Text>
-                  Go to Hell. na kub ^_^
+                <Card.Title
+                  style={{
+                    textAlign: "center",
+                  }}
+                >
+                  กาแฟ ออร์แกนิค เอสเพรสโซ่ (ชนิดบด)
+                </Card.Title>
+                <Card.Text
+                  style={{
+                    textAlign: "center",
+                    color: "#5676AE",
+                    fontSize: "20px",
+                  }}
+                >
+                  ฿300.00 – ฿1,300.00
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
             <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" style={{width:'287px',height:'180px'}} src="https://images4.sw-cdn.net/product/picture/710x528_21148842_11986442_1511049134.jpg" />
+              <Card.Img
+                variant="top"
+                style={{ width: "287px", height: "180px" }}
+                src="https://images4.sw-cdn.net/product/picture/710x528_21148842_11986442_1511049134.jpg"
+              />
               <Card.Body>
-                <Card.Title>Invoker  Figure</Card.Title>
-                <Card.Text>
-                  Go to Hell. na kub ^_^
+                <Card.Title
+                  style={{
+                    textAlign: "center",
+                  }}
+                >
+                  กาแฟ ออร์แกนิค เอสเพรสโซ่ (ชนิดบด)
+                </Card.Title>
+                <Card.Text
+                  style={{
+                    textAlign: "center",
+                    color: "#5676AE",
+                    fontSize: "20px",
+                  }}
+                >
+                  ฿300.00 – ฿1,300.00
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+            <Card style={{ width: "18rem" }}>
+              <Card.Img
+                variant="top"
+                style={{ width: "287px", height: "180px" }}
+                src="https://images4.sw-cdn.net/product/picture/710x528_21148842_11986442_1511049134.jpg"
+              />
+              <Card.Body>
+                <Card.Title
+                  style={{
+                    textAlign: "center",
+                  }}
+                >
+                  กาแฟ ออร์แกนิค เอสเพรสโซ่ (ชนิดบด)
+                </Card.Title>
+                <Card.Text
+                  style={{
+                    textAlign: "center",
+                    color: "#5676AE",
+                    fontSize: "20px",
+                  }}
+                >
+                  ฿300.00 – ฿1,300.00
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card style={{ width: "18rem" }}>
+              <Card.Img
+                variant="top"
+                style={{ width: "287px", height: "180px" }}
+                src="https://images4.sw-cdn.net/product/picture/710x528_21148842_11986442_1511049134.jpg"
+              />
+              <Card.Body>
+                <Card.Title
+                  style={{
+                    textAlign: "center",
+                  }}
+                >
+                  กาแฟ ออร์แกนิค เอสเพรสโซ่ (ชนิดบด)
+                </Card.Title>
+                <Card.Text
+                  style={{
+                    textAlign: "center",
+                    color: "#5676AE",
+                    fontSize: "20px",
+                  }}
+                >
+                  ฿300.00 – ฿1,300.00
+                </Card.Text>
               </Card.Body>
             </Card>
           </div>
-         </div>
-         
+        </div>
       </div>
     </div>
-    
   );
 };
 
