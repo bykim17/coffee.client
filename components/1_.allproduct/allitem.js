@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
+import scss from './allitem.module.scss'
 const allitem = () => {
   return (
     <div style={{ width: "100%" }}>
@@ -25,20 +26,11 @@ const allitem = () => {
             {" "}
             สินค้ายอดนิยม !!
           </div>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr 1fr 1fr",
-              gridColumnGap: "30px",
-              gridRowGap: "30px",
-              padding: "30px",
-            }}
-          >
+          <div className={scss.item}>
             <Card style={{ width: "18rem" }}>
               <Card.Img
+                src="image/Organic-Espresso-Ground-250g-300x300.png"
                 variant="top"
-                style={{ width: "287px", height: "180px" }}
-                src="https://images4.sw-cdn.net/product/picture/710x528_21148842_11986442_1511049134.jpg"
               />
               <Card.Body>
                 <Card.Title
@@ -62,8 +54,7 @@ const allitem = () => {
             <Card style={{ width: "18rem" }}>
               <Card.Img
                 variant="top"
-                style={{ width: "287px", height: "180px" }}
-                src="https://images4.sw-cdn.net/product/picture/710x528_21148842_11986442_1511049134.jpg"
+                src="image/BoncafeFineRoast-300x300.png"
               />
               <Card.Body>
                 <Card.Title

@@ -1,10 +1,11 @@
 import React from 'react'
 import {} from "react-bootstrap";
-import Sytlecss from "../assets/styles/menu.module.css";
+import Sytlecss from "../assets/styles/menu.module.scss";
 const menu = () => {
   return (
     <div className={Sytlecss.mn}>
-       <h style={{ backgroundColor: "#AA6242" ,display:"block",color:"#FFFFFF",fontSize:"40px",paddingLeft:"15px"}}>กาแฟ</h>
+       
+       <h className={Sytlecss.text_h} >กาแฟ </h>
       <div className={Sytlecss.text_p}>
        <p>กาแฟชนิดบด</p>
        <p>กาแฟชนิดเมล็ด</p>

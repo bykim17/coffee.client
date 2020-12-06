@@ -1,0 +1,26 @@
+.item{
+   
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column: 30px;
+        grid-row: 30px;
+        padding: 30px;
+      
+}
+@media screen  and (max-width: 1280px){
+        .item{
+                grid-template-columns: 1fr 1fr 1fr; 
+        }
+}
+
+@media screen  and (max-width: 768px){
+        .item{
+                grid-template-columns: 1fr 1fr; 
+        }
+}
+
+@media screen  and (max-width: 375px){
+        .item{
+                grid-template-columns: 1fr; 
+        }
+}
