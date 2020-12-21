@@ -1,6 +1,5 @@
 import React from 'react'
 import Allitem from '../components/1_.allproduct/allitem'
-import Navbar from "../components/navbar";
 import bg from './index.module.scss'
 
 const index = () => {

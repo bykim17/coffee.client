@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Sytlecss from "../assets/styles/navbar.module.css";
 import {
   Navbar,
@@ -9,7 +9,11 @@ import {
   Button,
   Container,
 } from "react-bootstrap";
+import Link from "next/link";
+import { AuthContext } from "../appState/AuthProvider";
 const navbar = () => {
+  const { user, signout } = useContext(AuthContext);
+
   return (
     <div>
       <div>
@@ -23,18 +27,31 @@ const navbar = () => {
         style={{ backgroundColor: "#AA6242" }}
       >
         <Navbar.Brand
-          style={{ fontFamily: "Kanit, sans-serif", color: "#FFFFFF",fontSize:"20px" }}
+          style={{
+            fontFamily: "Kanit, sans-serif",
+            color: "#FFFFFF",
+            fontSize: "20px",
+          }}
         >
           Logo
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link
-              style={{ fontFamily: "Kanit, sans-serif", color: "#FFFFFF",fontSize:"20px" }}
-            >
-              หน้าแรก
-            </Nav.Link>
+            <Link href="/">
+              <Nav.Link
+                eventKey={2}
+                href="/"
+                style={{
+                  fontFamily: "Kanit, sans-serif",
+                  color: "#FFFFFF",
+                  fontSize: "20px",
+                }}
+              >
+                หน้าแรก
+              </Nav.Link>
+            </Link>
+
             <Form inline>
               <FormControl
                 type="text"
@@ -54,15 +71,35 @@ const navbar = () => {
           </Nav>
           <Nav>
             <Nav.Link
-              style={{ fontFamily: "Kanit, sans-serif", color: "#FFFFFF",fontSize:"20px" }}
+              style={{
+                fontFamily: "Kanit, sans-serif",
+                color: "#FFFFFF",
+                fontSize: "20px",
+              }}
             >
               ติดต่อ
             </Nav.Link>
-            <Nav.Link
-              style={{ fontFamily: "Kanit, sans-serif", color: "#FFFFFF",fontSize:"20px" }}
-            >
-              เข้าสู่ระบบ
-            </Nav.Link>
+
+            {user ? (
+              <div>
+              "สวัสดี คุณ {user.name}"
+              <Button onClick={signout}>ออกจากระบบ</Button>
+              </div>
+              ) : (
+              <Link href="/login">
+                <Nav.Link
+                  eventKey={2}
+                  href="/login"
+                  style={{
+                    fontFamily: "Kanit, sans-serif",
+                    color: "#FFFFFF",
+                    fontSize: "20px",
+                  }}
+                >
+                  เข้าสู่ระบบ
+                </Nav.Link>
+              </Link>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
